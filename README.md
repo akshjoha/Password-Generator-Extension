@@ -1,4 +1,4 @@
-# Secure Password Manager Extension
+# Secure Password Manager Chrome Extension
 
 A minimalist, black-themed Chrome extension to **generate, save, fill, and manage passwords securely** with AES-GCM encryption.
 

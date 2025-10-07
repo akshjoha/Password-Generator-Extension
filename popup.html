@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Secure Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>🔐 Password Generator</h2>
+
+    <!-- Generate password -->
+    <div class="row">
+      <input type="number" id="length" min="8" max="32" value="12" title="Password length" />
+      <button id="generate" title="Generate password">Generate</button>
+    </div>
+
+    <div class="row password-row">
+      <input type="password" id="password" class="password-display" value="" />
+      <button id="togglePwd" title="Show/Hide password">👁️</button>
+    </div>
+
+    <div class="row btn-row">
+      <button id="copy">Copy</button>
+      <button id="fill">Fill</button>
+    </div>
+
+    <hr />
+
+    <!-- Saved passwords -->
+    <h3>Saved Passwords</h3>
+    <div class="storage">
+      <select id="savedPasswords">
+        <option value="">--Select saved password--</option>
+      </select>
+
+      <div class="row password-row">
+        <input type="password" id="savedPasswordDisplay" placeholder="Click eye to reveal" />
+        <button id="toggleSavedPwd" title="Show/Hide saved password">👁️</button>
+        <button id="deleteSaved" title="Delete saved password">🗑️</button>
+      </div>
+
+      <input type="password" id="masterPass" placeholder="Master pass" />
+      <button id="fillSaved">Fill Saved</button>
+    </div>
+
+    <hr />
+
+    <!-- Save password -->
+    <div class="storage">
+      <input type="text" id="saveName" placeholder="Label" />
+      <input type="password" id="saveMasterPass" placeholder="Master pass" />
+      <button id="saveBtn">Save</button>
+    </div>
+
+    <div id="note"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

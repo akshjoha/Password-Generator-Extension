@@ -55,3 +55,21 @@ A minimalist, black-themed Chrome extension to **generate, save, fill, and manag
 - Without the master password, decrypted passwords cannot be retrieved.  
 
 **Storage Location (Windows):**  
+C:\Users<YourUserName>\AppData\Local\Google\Chrome\User Data\Default\Local Extension Settings<extension-id>\
+> Data is stored in LevelDB format and cannot be read directly without the master password.  
+
+---
+
+## **Technical Details**
+
+- **Technologies:** HTML, CSS, JavaScript, Chrome Extension APIs.  
+- **Encryption:** Web Crypto API, AES-GCM, PBKDF2 key derivation.  
+- **Popup UI:** Minimalist black theme with intuitive buttons for all actions.  
+
+---
+
+## **Notes**
+
+- Deleting the extension will remove all stored passwords.  
+- Always remember your **master password**; without it, saved passwords cannot be decrypted.  
+- This extension does **not sync passwords** to the cloud; it is fully local and offline.  
